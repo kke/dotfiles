@@ -1,0 +1,61 @@
+set nocompatible               " be iMproved                                   
+filetype off                   " required!
+syntax on
+set t_Co=256
+" set colorcolumn=80
+let mapleader = ","
+let maplocalleader = ","
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+set wildmenu
+set listchars=tab:>-,trail:-
+set expandtab
+" set number
+set wildmode=list:longest
+set viminfo^=!
+set cf
+set ai
+set si
+set cindent
+set smartindent
+set autoindent
+set tabstop=2
+set shiftwidth=2
+set cinkeys=0{,0},:,0#,!,!^F
+set cursorline
+set cursorcolumn
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+Bundle 'IndentAnything'
+Bundle 'Tab-Manager'
+Bundle 'Threesome'
+Bundle 'blockle.vim'
+Bundle 'dbext.vim'
+Bundle 'ftpluginruby.vim'
+Bundle 'fugitive.vim'
+Bundle 'matchit.vim'
+Bundle 'minibufexpl.vim'
+Bundle 'molly.vim'
+Bundle 'rails.vim'
+Bundle 'ri-viewer'
+Bundle 'ruby-matchit'
+Bundle 'ruby.vim'
+Bundle 'tpope/vim-rails.git'
+Bundle 'endwise.vim'
+
+filetype plugin indent on     " required! 
+colorscheme lucius
+map <Leader>t :MiniBufExplorer<cr>
+vmap r "_dP
+map <Leader>c :w !ruby -c<cr>
+au BufNewFile,BufRead *.rabl set filetype=ruby
+
+" Tips:
+" ctrl-w = window stuff, ctrl-w-ctrl-w next win
+"          ctrl-ws = split
+"          ctrl-wv = split vertic
+" "_d      delete to blackhole register, leaves clipboard intact
+" mapped r to replace with buffer in visual mode
+
