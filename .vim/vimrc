@@ -1,11 +1,16 @@
 execute pathogen#infect()
-set nocompatible               " be iMproved                                   
-filetype off                   " required!
-syntax on
-set t_Co=256
-" set colorcolumn=80
+
+set nocompatible
+filetype off
+
+syntax enable
+set background=dark
+let g:solarized_termcolors=16
+set t_Co=16
+
 let mapleader = ","
 let maplocalleader = ","
+
 set list listchars=tab:\ \ ,trail:·
 set expandtab
 set smarttab
@@ -56,7 +61,6 @@ set foldnestmax=3       "deepest fold is 3 levels
 set nofoldenable        "dont fold by default
 
 filetype plugin indent on     " required! 
-colorscheme lucius
 vmap r "_dP
 map <Leader>c :w !ruby -c<cr>
 au BufNewFile,BufRead *.rabl set filetype=ruby
@@ -71,3 +75,4 @@ map <leader>n :NERDTreeToggle<CR>
 " "_d      delete to blackhole register, leaves clipboard intact
 " mapped r to replace with buffer in visual mode
 
+colorscheme solarized
