@@ -60,6 +60,9 @@ colorscheme lucius
 vmap r "_dP
 map <Leader>c :w !ruby -c<cr>
 au BufNewFile,BufRead *.rabl set filetype=ruby
+map <Leader>t :TagbarToggle<CR>
+map <leader>b :CtrlPBuffer<CR>
+map <leader>n :NERDTreeToggle<CR>
 
 " Tips:
 " ctrl-w = window stuff, ctrl-w-ctrl-w next win
