@@ -22,3 +22,12 @@
 [submodule ".vim/bundle/tabular"]
 	path = .vim/bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".vim/bundle/GoldenView"]
+	path = .vim/bundle/GoldenView
+	url = https://github.com/zhaocai/GoldenView.Vim.git
+[submodule ".vim/bundle/vim-bundler"]
+	path = .vim/bundle/vim-bundler
+	url = https://github.com/tpope/vim-bundler.git

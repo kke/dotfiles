@@ -6,8 +6,6 @@ set t_Co=256
 " set colorcolumn=80
 let mapleader = ","
 let maplocalleader = ","
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
 set wildmenu
 set listchars=tab:>-,trail:-
 set expandtab
