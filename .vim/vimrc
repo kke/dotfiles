@@ -1,3 +1,4 @@
+execute pathogen#infect()
 set nocompatible               " be iMproved                                   
 filetype off                   " required!
 syntax on
@@ -25,29 +26,8 @@ set cinkeys=0{,0},:,0#,!,!^F
 set cursorline
 set cursorcolumn
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-Bundle 'IndentAnything'
-Bundle 'Tab-Manager'
-Bundle 'Threesome'
-Bundle 'blockle.vim'
-Bundle 'dbext.vim'
-Bundle 'ftpluginruby.vim'
-Bundle 'fugitive.vim'
-Bundle 'matchit.vim'
-Bundle 'minibufexpl.vim'
-Bundle 'molly.vim'
-Bundle 'rails.vim'
-Bundle 'ri-viewer'
-Bundle 'ruby-matchit'
-Bundle 'ruby.vim'
-Bundle 'tpope/vim-rails.git'
-Bundle 'endwise.vim'
-
 filetype plugin indent on     " required! 
 colorscheme lucius
-map <Leader>t :MiniBufExplorer<cr>
 vmap r "_dP
 map <Leader>c :w !ruby -c<cr>
 au BufNewFile,BufRead *.rabl set filetype=ruby
