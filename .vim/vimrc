@@ -9,7 +9,7 @@ let g:solarized_termcolors=16
 set t_Co=16
 
 let mapleader = ","
-let maplocalleader = ","
+" let maplocalleader = ","
 
 set list listchars=tab:\ \ ,trail:·
 set expandtab
@@ -22,7 +22,7 @@ set autoread
 set visualbell
 set number                      "Line numbers are good
 set backspace=indent,eol,start  "Allow backspace in insert mode
-set history=1000   
+set history=1000
 set viminfo^=!
 set cf
 set ai
@@ -32,7 +32,7 @@ set smartindent
 set autoindent
 set tabstop=2
 set shiftwidth=2
-set cinkeys=0{,0},:,0#,!,!^F
+set cinkeys=0{,0},:,0#,!^F
 set cursorline
 set cursorcolumn
 set scrolloff=8         "Start scrolling when we're 8 lines away from margins
@@ -67,6 +67,9 @@ au BufNewFile,BufRead *.rabl set filetype=ruby
 map <Leader>t :TagbarToggle<CR>
 map <leader>b :CtrlPBuffer<CR>
 map <leader>n :NERDTreeToggle<CR>
+
+let g:acp_mappingDriven=1
+let g:acp_enableAtStartup=0
 
 " Tips:
 " ctrl-w = window stuff, ctrl-w-ctrl-w next win
