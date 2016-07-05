@@ -91,7 +91,10 @@ RPS1='${PR_RED}$(rbenv version-name)%{$reset_color'
 alias llt="less \`git rev-parse --show-toplevel\`/log/test.log"
 alias lld="less \`git rev-parse --show-toplevel\`/log/development.log"
 alias llp="less \`git rev-parse --show-toplevel\`/log/production.log"
+alias ff="git ls-files|grep"
 
 # To not share history between sessions:
 setopt APPEND_HISTORY
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

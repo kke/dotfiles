@@ -8,9 +8,10 @@ set background=dark
 let g:solarized_termcolors=16
 set t_Co=16
 
-let mapleader = ","
-" let maplocalleader = ","
+let mapleader = "\<Space>"
+let maplocalleader = ","
 
+set rtp+=~/.fzf
 set list listchars=tab:\ \ ,trail:·
 set expandtab
 set smarttab
@@ -66,10 +67,16 @@ map <Leader>c :w !ruby -c<cr>
 au BufNewFile,BufRead *.rabl set filetype=ruby
 map <Leader>t :TagbarToggle<CR>
 map <leader>b :CtrlPBuffer<CR>
+map <leader><Space> :CtrlP<CR>
 map <leader>n :NERDTreeToggle<CR>
+vmap T :Tabularize /,\zs<cr>
+
 
 let g:acp_mappingDriven=1
 let g:acp_enableAtStartup=0
+
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Tips:
 " ctrl-w = window stuff, ctrl-w-ctrl-w next win
