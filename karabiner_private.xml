@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<root>
+    <symbol_map type="KeyCode" name="PIPE" value="0x7c" />
+    <item>
+        <name>Add PIPE to right place</name>
+        <identifier>private.pipe</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::GERMAN_LESS_THAN, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::KEY_7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION
+        </autogen>
+    </item>
+    <item>
+        <name>Add BACKSLASH to right place</name>
+        <identifier>private.backslash</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::MINUS, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION, KeyCode::7, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
+    <item>
+        <name>Add LEFTCURLY to right place</name>
+        <identifier>private.leftcurl</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::RawValue::0x1a, ModifierFlag::OPTION_R,
+            KeyCode::8, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
+    <item>
+        <name>Add RIGHTCURLY to right place</name>
+        <identifier>private.rightcurl</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::RawValue::0x1d, ModifierFlag::OPTION_R, KeyCode::9, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L
+        </autogen>
+    </item>
+    <item>
+        <name>Add TILDE to right place</name>
+        <identifier>private.tilde</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::RawValue::0x1e, ModifierFlag::OPTION_R, KeyCode::K, ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+</root>
