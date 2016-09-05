@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/ri.vim"]
 	path = .vim/bundle/ri.vim
 	url = https://github.com/danchoi/ri.vim.git
+[submodule ".vim/bundle/vim-markdown.git"]
+	path = .vim/bundle/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
