@@ -9,6 +9,13 @@
         </autogen>
     </item>
     <item>
+        <name>Add another PIPE to another right place</name>
+        <identifier>private.pipe2</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::DANISH_DOLLAR, ModifierFlag::OPTION_R, KeyCode::KEY_7, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_OPTION
+        </autogen>
+    </item>
+    <item>
         <name>Add BACKSLASH to right place</name>
         <identifier>private.backslash</identifier>
         <autogen>
@@ -35,6 +42,13 @@
         <identifier>private.tilde</identifier>
         <autogen>
           __KeyToKey__ KeyCode::RawValue::0x1e, ModifierFlag::OPTION_R, KeyCode::K, ModifierFlag::OPTION_R
+        </autogen>
+    </item>
+    <item>
+        <name>Add LTGT to right place</name>
+        <identifier>private.ltgt</identifier>
+        <autogen>
+          __KeyToKey__ KeyCode::DANISH_DOLLAR, KeyCode::BACKQUOTE
         </autogen>
     </item>
 </root>

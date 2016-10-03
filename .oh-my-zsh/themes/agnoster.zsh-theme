@@ -175,6 +175,11 @@ prompt_virtualenv() {
   fi
 }
 
+# Current ruby
+prompt_ruby() {
+  prompt_segment blue black "$(rbenv version-name)"
+}
+
 # Status:
 # - was there an error
 # - am I root
@@ -190,14 +195,23 @@ prompt_status() {
 }
 
 ## Main prompt
+# build_prompt() {
+#   RETVAL=$?
+#   prompt_status
+#   prompt_virtualenv
+#   prompt_context
+#   prompt_dir
+#   prompt_git
+#   prompt_hg
+#   prompt_end
+# }
+
 build_prompt() {
   RETVAL=$?
   prompt_status
-  prompt_virtualenv
-  prompt_context
   prompt_dir
   prompt_git
-  prompt_hg
+  prompt_ruby
   prompt_end
 }
 
